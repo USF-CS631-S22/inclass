@@ -1,4 +1,4 @@
-PROGS = lab02
+PROG = lab02
 OBJS = scan.o parse.o
 HEADERS = ntlang.h
 
@@ -8,13 +8,10 @@ CFLAGS = -g
 %.o : %.c ${HEADERS}
 	gcc ${CFLAGS} -c -o $@ $<
 
-%.o : %.s ${HEADERS}
-	as -o $@ $<
+all : ${PROG}
 
-all : ${PROGS}
-
-lab02 : lab02.c ${HEADERS} ${OBJS}
+lab02 : ${PROG}.c ${HEADERS} ${OBJS}
 	gcc ${CFLAGS} -o $@ $< ${OBJS}
 
 clean :
-	rm -rf ${PROGS} ${OBJS}
+	rm -rf ${PROG} ${OBJS}

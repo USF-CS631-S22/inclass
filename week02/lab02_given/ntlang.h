@@ -17,7 +17,7 @@
 tokens ::= (token)*
 token  ::= intlit | symbol
 symbol ::= '+' | '-'
-integer ::= digit (digit)*
+intlit ::= digit (digit)*
 digit  ::= '0' | '1' | ... | '9'
 
 # Ignore
@@ -61,6 +61,7 @@ void scan_token_print(struct scan_token_st *tk);
 void scan_table_init(struct scan_table_st *st);
 void scan_table_scan(struct scan_table_st *st, char *input);
 void scan_table_print(struct scan_table_st *st);
+
 struct scan_token_st * scan_table_get(struct scan_table_st *st, int i);
 bool scan_table_accept(struct scan_table_st *st, enum scan_token_enum tk_expected);
 
@@ -69,7 +70,7 @@ bool scan_table_accept(struct scan_table_st *st, enum scan_token_enum tk_expecte
  */
 
  /*
- A simple grammar for the ntcalc langauge
+ A simple grammar for the ntlang langauge
 
 # Parser
 
