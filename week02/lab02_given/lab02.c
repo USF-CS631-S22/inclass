@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
 
     /* We will need some new scan functions to help the parser.
      *
-     * struct scan_token_st *scan_token_get(struct scan_table_st *st, int i)
+     * struct scan_token_st *scan_table_get(struct scan_table_st *st, int i)
      * 
      * retrieves a token relative to the current position in the table,
      * which is initially 0. You can use negative numbers to get tokens
@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
 
     /* The function
      * 
-     * scan_token_accept(struct scan_table_st *st,
+     * scan_table_accept(struct scan_table_st *st,
      *                   enum scan_token_enum tk_expected);
      *
      * match the expected token (tk_expected) with the token at the

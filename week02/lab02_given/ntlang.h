@@ -78,7 +78,7 @@ program    ::= expression EOT
 expression ::= operand (operator operand)*
 operand    ::= intlit
 
-operator   ::= '+'
+operator   ::= '+' | '-'
 */
 
 enum parse_expr_enum {EX_INTVAL, EX_OPER1, EX_OPER2};
