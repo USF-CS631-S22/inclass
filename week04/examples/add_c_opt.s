@@ -6,7 +6,7 @@
 	.eabi_attribute 24, 1
 	.eabi_attribute 25, 1
 	.eabi_attribute 26, 2
-	.eabi_attribute 30, 6
+	.eabi_attribute 30, 2
 	.eabi_attribute 34, 1
 	.eabi_attribute 18, 4
 	.file	"add_c.c"
@@ -19,21 +19,10 @@
 	.fpu vfp
 	.type	add_c, %function
 add_c:
-	@ args = 0, pretend = 0, frame = 8
-	@ frame_needed = 1, uses_anonymous_args = 0
+	@ args = 0, pretend = 0, frame = 0
+	@ frame_needed = 0, uses_anonymous_args = 0
 	@ link register save eliminated.
-	str	fp, [sp, #-4]!
-	add	fp, sp, #0
-	sub	sp, sp, #12
-	str	r0, [fp, #-8]
-	str	r1, [fp, #-12]
-	ldr	r2, [fp, #-8]
-	ldr	r3, [fp, #-12]
-	add	r3, r2, r3
-	mov	r0, r3
-	add	sp, fp, #0
-	@ sp needed
-	ldr	fp, [sp], #4
+	add	r0, r0, r1
 	bx	lr
 	.size	add_c, .-add_c
 	.ident	"GCC: (Raspbian 10.2.1-6+rpi1) 10.2.1 20210110"
