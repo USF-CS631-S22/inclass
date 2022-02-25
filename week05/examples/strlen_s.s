@@ -9,7 +9,7 @@ strlen_s:
     mov r1, #0
 
 loop:    
-    ldrb r2, [r0]
+    ldrb r2, [r0]   @ Note use of ldrb to read a byte from memory
     cmp r2, #0
     beq exit
     add r1, r1, #1
