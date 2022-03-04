@@ -136,10 +136,10 @@ void get_bitseq_signed_test(uint32_t num, int start, int end) {
     int32_t r;
 
     r = get_bitseq_signed_c(num, start, end);
-    printf("get_bitseq_c(%u, %d, %d) = %d\n", num, start, end, r);
+    printf("get_bitseq_signed_c(%u, %d, %d) = %d\n", num, start, end, r);
 
     r = get_bitseq_signed_s(num, start, end);
-    printf("get_bitseq_s(%u, %d, %d) = %d\n", num, start, end, r);    
+    printf("get_bitseq_signed_s(%u, %d, %d) = %d\n", num, start, end, r);    
 }
 
 

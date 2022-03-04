@@ -30,7 +30,7 @@ int matches_c(char *s1, char *s2) {
             count += 1;
             s1 = next + 1;
         } else {
-            s1 += 1;        
+            break;
         }
     }
     
