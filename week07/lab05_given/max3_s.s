@@ -1,4 +1,4 @@
-/* max3_s.s - find the maximum value of three arguments using max2 */
+@ max3_s.s - find the maximum value of three arguments using max2
 
 .global max3_s
 
@@ -9,10 +9,10 @@ max2_s:
 max2_end:
     bx lr
 
-/* r0 - v0
- * r1 - v1
- * r2 - v2
- */
+@ r0 - v0
+@ r1 - v1
+@ r2 - v2
+
 max3_s:
     sub sp, sp, #8
     str lr, [sp]

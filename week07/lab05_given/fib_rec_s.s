@@ -1,4 +1,4 @@
-/* fib_rec_s - recursive fibanocci */
+@ fib_rec_s - recursive fibanocci
 
 .global fib_rec_s
 
