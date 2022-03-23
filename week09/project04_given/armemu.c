@@ -136,7 +136,6 @@ void armemu_add(struct arm_state *asp, uint32_t iw) {
     }
 }
 
-
 void armemu_one(struct arm_state *asp) {
 
     asp->analysis.i_count += 1;
