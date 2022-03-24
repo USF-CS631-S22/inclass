@@ -210,8 +210,8 @@ void merge_sort_test(int start_arg, int argc, char **argv, struct arm_state *sta
     copy_array(a, a_copy, len);
     print_array("a[] =", a, len);
     print_array("aux[] =", aux, len);
-    merge_sort_c(a, aux, 0, len - 1);
-    printf("merge_sort_c(a, aux, 0, %d)\n", len - 1);
+    merge_sort_c(a, 0, len - 1, aux);
+    printf("merge_sort_c(a, 0, %d, aux)\n", len - 1);
     print_array("a[] =", a, len);
 
     for (int i = 0; i < len; i++) {
@@ -220,8 +220,8 @@ void merge_sort_test(int start_arg, int argc, char **argv, struct arm_state *sta
     copy_array(a, a_copy, len);
     print_array("a[] =", a, len);
     print_array("aux[] =", aux, len);
-    merge_sort_s(a, aux, 0, len - 1);
-    printf("merge_sort_c(a, aux, 0, %d)\n", len - 1);
+    merge_sort_s(a, 0, len - 1, aux);
+    printf("merge_sort_c(a, 0, %d, aux)\n", len - 1);
     print_array("a[] =", a, len);
 
     for (int i = 0; i < len; i++) {
@@ -230,9 +230,9 @@ void merge_sort_test(int start_arg, int argc, char **argv, struct arm_state *sta
     copy_array(a, a_copy, len);
     print_array("a[] =", a, len);
     print_array("aux[] =", aux, len);
-    armemu_init(state, (uint32_t*) merge_sort_s, (uint32_t) a, (uint32_t) aux, 0, len - 1);
+    armemu_init(state, (uint32_t*) merge_sort_s, (uint32_t) a, 0, len - 1, (uint32_t) aux);
     armemu(state);
-    printf("merge_sort_e(a, aux, 0, %d)\n", len - 1);
+    printf("merge_sort_e(a, 0, %d, aux)\n", len - 1);
     print_array("a[] =", a, len);
 }
 

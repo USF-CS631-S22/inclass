@@ -1,5 +1,5 @@
 // Merge two adjecent sub arrays
-void merge_c(int a[], int aux[], int start, int end) {
+void merge_c(int a[], int start, int end, int aux[]) {
     int mid = (start + end) / 2;  // midpoint
     int pointer_left = start;  // points to the beginning of the left sub-array
     int pointer_right = mid + 1; // points to the beginning of the right sub-array
@@ -33,7 +33,7 @@ void merge_c(int a[], int aux[], int start, int end) {
 
  
 // Sort the subsection a[i .. j] of the array a[]
-void merge_sort_c(int a[], int aux[], int start, int end) {
+void merge_sort_c(int a[], int start, int end, int aux[]) {
     if (end <= start)  // the subsection is empty or a single element
         return;
     int mid = (start + end) / 2;
@@ -42,10 +42,10 @@ void merge_sort_c(int a[], int aux[], int start, int end) {
     // right sub-array is a[mid + 1 .. end]
 
     // sort the left sub-array recursively
-    merge_sort_c(a, aux, start, mid);
+    merge_sort_c(a, start, mid, aux);
     // sort the right sub-array recursively
-    merge_sort_c(a, aux, mid + 1, end);
+    merge_sort_c(a, mid + 1, end, aux);
 
     // merge the left and right sides
-    merge_c(a, aux, start, end);
+    merge_c(a, start, end, aux);
 }
