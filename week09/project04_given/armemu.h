@@ -23,6 +23,7 @@
 #define CT_SET_ASSOCIATIVE_1 3
 #define CT_SET_ASSOCIATIVE_4 4
 #define CACHE_MAX_SLOTS 4096
+#define CACHE_MAX_BLOCK_SIZE 4
 
 // Dynamic analysis structs
 
@@ -40,7 +41,7 @@ struct analysis_st {
 struct cache_slot_st {
     uint32_t valid;
     uint32_t tag;
-    uint32_t data;
+    uint32_t block[CACHE_MAX_BLOCK_SIZE];
     uint32_t timestamp;
 
 };
@@ -101,8 +102,8 @@ void strncat_s(char *dst, char *src, int n);
 int matches_c(char *s1, char *s2);
 int matches_s(char *s1, char *s2);
 
-void merge_sort_c(int a[], int aux[], int start, int end);
-void merge_sort_s(int a[], int aux[], int start, int end);
+void merge_sort_c(int a[], int start, int end, int aux[]);
+void merge_sort_s(int a[], int start, int end, int aux[]);
 
 // Public functions for armemu and cache
 void armemu_init(struct arm_state *asp, uint32_t *fp,

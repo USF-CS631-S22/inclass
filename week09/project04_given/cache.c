@@ -23,7 +23,9 @@ void cache_init(struct cache_st *csp) {
     for (int i = 0; i < CACHE_MAX_SLOTS; i++) {
         csp->slots[i].valid = 0;
         csp->slots[i].tag = 0;
-        csp->slots[i].data = 0;
+        for (int j = 0; j < CACHE_MAX_BLOCK_SIZE; j++) {
+            csp->slots[i].block[j] = 0;
+        }
         // timestamp only used for SA cache
         csp->slots[i].timestamp = 0;
     }
@@ -87,11 +89,11 @@ uint32_t cache_lookup_dm(struct cache_st *csp, uint32_t addr,
 
         if (write) {
             // update cache slot data
-            slot->data = value;
+            slot->block[0] = value;
             // write back to memory
             *((uint32_t *) addr) = value;
         } else {
-            data = slot->data;
+            data = slot->block[0];
         }
         verbose("  cache tag hit for index %d tag %X addr %lX\n",
                 index, tag, addr);
@@ -112,11 +114,11 @@ uint32_t cache_lookup_dm(struct cache_st *csp, uint32_t addr,
         slot->valid = 1;
         slot->tag = tag;
         if (write) {
-            slot->data = value;
+            slot->block[0] = value;
             *((uint32_t *) addr) = value;
         } else {
             data = *((uint32_t *) addr);
-            slot->data = data;
+            slot->block[0] = data;
         }
     }
     
@@ -128,6 +130,8 @@ uint32_t cache_lookup_sa(struct cache_st *csp, uint32_t addr, bool write, uint32
     return 0;
 }
 
+
+
 // Cache lookup
 uint32_t cache_lookup(struct cache_st *csp, uint32_t addr, bool write, uint32_t value) {
     uint32_t data;
@@ -137,7 +141,6 @@ uint32_t cache_lookup(struct cache_st *csp, uint32_t addr, bool write, uint32_t 
     } else if (csp->type == CT_SET_ASSOCIATIVE_1 || csp->type == CT_SET_ASSOCIATIVE_4) {
         data = cache_lookup_sa(csp, addr, write, value);
     } else {
-        // No cache, just read/write from/to memory.
         if (write) {
             *((uint32_t *) addr) = value;
         } else {
