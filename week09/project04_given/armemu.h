@@ -51,6 +51,8 @@ struct cache_st {
     int size;
     int ways;
     int block_size;
+    uint32_t block_mask;
+    uint32_t block_bits;
     uint32_t index_mask;
     uint32_t index_bits;
     int refs;

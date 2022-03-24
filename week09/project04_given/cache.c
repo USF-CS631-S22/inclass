@@ -2,22 +2,35 @@
 #include <stdlib.h>
 
 #include "armemu.h"
-    
+
 void cache_init(struct cache_st *csp) {
 
-    if (csp->type == CT_DIRECT_MAPPED_1) {
+    if (csp->type == CT_NONE) {
+        return;
+    } else if (csp->type == CT_DIRECT_MAPPED_1) {
         csp->ways = 1;
-        csp->index_mask = (csp->size) - 1;
         csp->block_size = 1;
     } else if (csp->type == CT_SET_ASSOCIATIVE_1) {
         csp->ways = 4;
-        csp->index_mask = (csp->size / csp->ways) - 1;
         csp->block_size = 1;
+    } else if (csp->type == CT_DIRECT_MAPPED_4) {
+        csp->ways = 1;
+        csp->block_size = 4;
+    } else if (csp->type == CT_SET_ASSOCIATIVE_4) {
+        csp->ways = 4;
+        csp->block_size = 4;
     }
+
+    csp->block_mask = (csp->block_size) - 1;
+    csp->index_mask = ((csp->size / csp->block_size) / csp->ways) - 1;
 
     csp->index_bits = 0;
     while (csp->index_mask & (1 << csp->index_bits)) {
               csp->index_bits++;
+    }
+    csp->block_bits = 0;
+    while (csp->block_mask & (1 << csp->block_bits)) {
+              csp->block_bits++;
     }
 
     for (int i = 0; i < CACHE_MAX_SLOTS; i++) {
@@ -129,8 +142,6 @@ uint32_t cache_lookup_sa(struct cache_st *csp, uint32_t addr, bool write, uint32
     // TODO
     return 0;
 }
-
-
 
 // Cache lookup
 uint32_t cache_lookup(struct cache_st *csp, uint32_t addr, bool write, uint32_t value) {
