@@ -65,14 +65,14 @@
           <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="1220" y="20"/>
+      <pos x="1220" y="40"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>BR</string>
+          <string>BCC</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -83,7 +83,7 @@
           <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="1220" y="160"/>
+      <pos x="1220" y="200"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -101,7 +101,7 @@
           <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="1220" y="300"/>
+      <pos x="1220" y="-40"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -119,7 +119,7 @@
           <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="1220" y="440"/>
+      <pos x="1220" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -133,7 +133,7 @@
           <int>32</int>
         </entry>
       </elementAttributes>
-      <pos x="220" y="740"/>
+      <pos x="220" y="720"/>
     </visualElement>
     <visualElement>
       <elementName>And</elementName>
@@ -167,7 +167,7 @@
           <intFormat>dec</intFormat>
         </entry>
       </elementAttributes>
-      <pos x="1220" y="540"/>
+      <pos x="1220" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
@@ -206,18 +206,40 @@
       <pos x="1220" y="860"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
+      <elementName>Out</elementName>
       <elementAttributes>
         <entry>
-          <string>Value</string>
-          <long>0</long>
+          <string>Label</string>
+          <string>BL</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>8</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
       </elementAttributes>
-      <pos x="1100" y="-120"/>
+      <pos x="1220" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="1220" y="120"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -230,20 +252,8 @@
       <p2 x="340" y="800"/>
     </wire>
     <wire>
-      <p1 x="1200" y="160"/>
-      <p2 x="1220" y="160"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="740"/>
-      <p2 x="240" y="740"/>
-    </wire>
-    <wire>
-      <p1 x="-300" y="680"/>
-      <p2 x="-280" y="680"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="300"/>
-      <p2 x="1220" y="300"/>
+      <p1 x="220" y="720"/>
+      <p2 x="240" y="720"/>
     </wire>
     <wire>
       <p1 x="320" y="720"/>
@@ -254,48 +264,12 @@
       <p2 x="-100" y="660"/>
     </wire>
     <wire>
-      <p1 x="1200" y="20"/>
-      <p2 x="1220" y="20"/>
-    </wire>
-    <wire>
-      <p1 x="1100" y="-120"/>
-      <p2 x="1200" y="-120"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="-120"/>
-      <p2 x="1220" y="-120"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="440"/>
-      <p2 x="1220" y="440"/>
+      <p1 x="-300" y="680"/>
+      <p2 x="-280" y="680"/>
     </wire>
     <wire>
       <p1 x="340" y="860"/>
       <p2 x="1220" y="860"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="540"/>
-      <p2 x="1220" y="540"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="-120"/>
-      <p2 x="1200" y="20"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="440"/>
-      <p2 x="1200" y="540"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="20"/>
-      <p2 x="1200" y="160"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="160"/>
-      <p2 x="1200" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="1200" y="300"/>
-      <p2 x="1200" y="440"/>
     </wire>
     <wire>
       <p1 x="340" y="720"/>
