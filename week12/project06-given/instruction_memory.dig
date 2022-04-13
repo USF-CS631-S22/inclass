@@ -1023,7 +1023,7 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>18-fib-rec</string>
+          <string>18-sum-array</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -1031,9 +1031,10 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>e3a0d001,e1a0d50d,e3a0000a,eb000000,e2800000,e24dd008,e58de000
-,e3500001,da000009,e2400001,e58d0004,ebfffff8,e1a01000,e59d0004
-,e2400001,e58d1004,ebfffff3,e59d1004,e0800001,e59de000,e28dd008,e12fff1e</data>
+          <data>e3a00001,e1a0d500,e24dd014,e3a00000,e58d0000,e3a00004,e58d0004
+,e3a00008,e58d0008,e3a0000c,e58d000c,e3a00010,e58d0010,e1a0000d
+,e3a01005,eb000000,e2800000,e3a02000,e3a03000,e1530001,aa000004
+,e590c000,e082200c,e2800004,e2833001,eafffff8,e1a00002,e12fff1e</data>
         </entry>
         <entry>
           <string>lastDataFile</string>
@@ -1065,11 +1066,17 @@
         </entry>
         <entry>
           <string>Label</string>
-          <string>19-sort</string>
+          <string>19-fib-rec</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a0d001,e1a0d50d,e3a0000a,eb000000,e2800000,e24dd008,e58de000
+,e3500001,da000009,e2400001,e58d0004,ebfffff8,e1a01000,e59d0004
+,e2400001,e58d1004,ebfffff3,e59d1004,e0800001,e59de000,e28dd008,e12fff1e</data>
         </entry>
         <entry>
           <string>lastDataFile</string>
