@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>LAYOUT</shapeType>
+    </entry>
+    <entry>
+      <string>Height</string>
+      <int>5</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>7</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-680" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Selector Bits</string>
+          <int>5</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="700" y="-100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>PN</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="-180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="-700" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>00-dp-reg</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00000,e3a01001,e0800001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06\rom\dp-reg.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-660" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-700" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-660" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[11]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[12]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[13]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[14]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[11]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[12]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[13]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>unused</string>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>01-dp-imm</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00002,e2400001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06\rom\dp-imm.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>02-dp-lsl-imm</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00001,e1a00100,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06\rom\dp-lsl-imm.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>03-dp-lsr-reg</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00002,e3a01001,e1a00130,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06\rom\dp-lsr-reg.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>04-dp-asr-imm</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00002,e1a000c0,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\dp-asr-imm.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>05-mem-reg</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a0d0ff,e1a0d10d,e24dd008,e3a00001,e3a0c004,e58d0004,e3a00002
+,e79d000c,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\mem-reg.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>06-mem-imm</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a0d0ff,e1a0d10d,e24dd008,e3a00001,e58d0004,e3a00002,e59d0004,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\mem-imm.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="860"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>07-mem-shift-reg</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a0d0ff,e1a0d10d,e24dd008,e3a00001,e3a0c001,e58d0004,e3a00002
+,e79d010c,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\mem-shift-reg.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="940"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-460" y="980"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>08-blbx</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00001,e3a01002,eb000000,e2800000,e0800001,e12fff1e</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\blbx.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>09-b</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>ea000003,e3a00000,e2400001,e2800001,e2800000,e3a00001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\b.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>10-beq</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e3510001,a000001,e3a00000,e2800000,e3a00001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\beq.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>11-ble</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e3510002,da000001,e3a00000,e2800000,e3a00001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\ble.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>12-bgt</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e3510000,ca000001,e3a00000,e2800000,e3a00001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\bgt.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>13-mul</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01002,e3a02003,e0000291,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\mul.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>14-rsb</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00017,e2600046,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\rsb.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="-40" y="820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="860"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>15-quadratic</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00002,e3a01004,e3a02006,e3a03008,eb000000,e2800000,e0020290
+,e0000090,e0000091,e0820000,e0830000,e12fff1e</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\quadratic_s.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>16-get-bitseq</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a0000d,e1a00280,e3a01005,e3a02007,eb000000,e2800000,e042c001
+,e1a00130,e3a03001,e1a03f83,e1a03c53,e26cc01f,e1a03c33,e0000003,e12fff1e</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\get_bitseq_s.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-420" y="1020"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>14</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-20" y="900"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>17-max3</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00001,e3a02003,e3a03002,eb000000,e2800000,e1500001,ca000000
+,e1a00001,e1500002,ca000000,e1a00002,e12fff1e</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\max3_s.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>18-fib-rec</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a0d001,e1a0d50d,e3a0000a,eb000000,e2800000,e24dd008,e58de000
+,e3500001,da000009,e2400001,e58d0004,ebfffff8,e1a01000,e59d0004
+,e2400001,e58d1004,ebfffff3,e59d1004,e0800001,e59de000,e28dd008,e12fff1e</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\fib_rec_s.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>19-sort</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\sort_s.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>20-merge-sort</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <file>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project06-phpeterson\rom\merge_sort_s.hex</file>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation reference="../../../../visualElement[8]/elementAttributes/entry/rotation"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>sel</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="860"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>20</string>
+        </entry>
+      </elementAttributes>
+      <pos x="340" y="900"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-700" y="0"/>
+      <p2 x="-660" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-220" y="0"/>
+      <p2 x="700" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="960"/>
+      <p2 x="-180" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="320"/>
+      <p2 x="700" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="580"/>
+      <p2 x="-440" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="580"/>
+      <p2 x="-40" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="580"/>
+      <p2 x="320" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="260"/>
+      <p2 x="-440" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="260"/>
+      <p2 x="-40" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="260"/>
+      <p2 x="320" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="260"/>
+      <p2 x="700" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="840"/>
+      <p2 x="-200" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="840"/>
+      <p2 x="180" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="840"/>
+      <p2 x="520" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="520"/>
+      <p2 x="700" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="200"/>
+      <p2 x="700" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="140"/>
+      <p2 x="-440" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="140"/>
+      <p2 x="-40" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="140"/>
+      <p2 x="700" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="460"/>
+      <p2 x="-440" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="460"/>
+      <p2 x="700" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="460"/>
+      <p2 x="-40" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="460"/>
+      <p2 x="320" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="-80"/>
+      <p2 x="700" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="400"/>
+      <p2 x="700" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="720"/>
+      <p2 x="-220" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="720"/>
+      <p2 x="160" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="720"/>
+      <p2 x="500" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="80"/>
+      <p2 x="700" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-20"/>
+      <p2 x="700" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="340"/>
+      <p2 x="-440" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="340"/>
+      <p2 x="700" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="340"/>
+      <p2 x="-40" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="340"/>
+      <p2 x="320" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="980"/>
+      <p2 x="-440" y="980"/>
+    </wire>
+    <wire>
+      <p1 x="-200" y="20"/>
+      <p2 x="700" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="600"/>
+      <p2 x="-240" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="600"/>
+      <p2 x="140" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="600"/>
+      <p2 x="480" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="280"/>
+      <p2 x="700" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="220"/>
+      <p2 x="-440" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="220"/>
+      <p2 x="800" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="220"/>
+      <p2 x="-40" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="220"/>
+      <p2 x="320" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="220"/>
+      <p2 x="700" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="860"/>
+      <p2 x="-440" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="860"/>
+      <p2 x="-40" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="860"/>
+      <p2 x="320" y="860"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="480"/>
+      <p2 x="700" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="480"/>
+      <p2 x="-260" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="480"/>
+      <p2 x="120" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="480"/>
+      <p2 x="460" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="160"/>
+      <p2 x="700" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="-100"/>
+      <p2 x="700" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="-680" y="100"/>
+      <p2 x="-600" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="100"/>
+      <p2 x="-40" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="100"/>
+      <p2 x="700" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="100"/>
+      <p2 x="-440" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="740"/>
+      <p2 x="-440" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="740"/>
+      <p2 x="-40" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="740"/>
+      <p2 x="320" y="740"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="420"/>
+      <p2 x="700" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="-260" y="-40"/>
+      <p2 x="700" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="360"/>
+      <p2 x="100" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="360"/>
+      <p2 x="700" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="360"/>
+      <p2 x="-280" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="360"/>
+      <p2 x="440" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="-700" y="40"/>
+      <p2 x="-660" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-180" y="40"/>
+      <p2 x="700" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="620"/>
+      <p2 x="-440" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="620"/>
+      <p2 x="-40" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="620"/>
+      <p2 x="320" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="940"/>
+      <p2 x="-440" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="300"/>
+      <p2 x="700" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="240"/>
+      <p2 x="80" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="240"/>
+      <p2 x="-300" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="240"/>
+      <p2 x="420" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="240"/>
+      <p2 x="700" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="500"/>
+      <p2 x="700" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="500"/>
+      <p2 x="-440" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="500"/>
+      <p2 x="-40" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="500"/>
+      <p2 x="320" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="820"/>
+      <p2 x="-440" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="820"/>
+      <p2 x="-40" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="820"/>
+      <p2 x="320" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="180"/>
+      <p2 x="700" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="440"/>
+      <p2 x="700" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="120"/>
+      <p2 x="-320" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="120"/>
+      <p2 x="60" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="120"/>
+      <p2 x="700" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="1080"/>
+      <p2 x="-140" y="1080"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="1080"/>
+      <p2 x="240" y="1080"/>
+    </wire>
+    <wire>
+      <p1 x="-280" y="-60"/>
+      <p2 x="700" y="-60"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="380"/>
+      <p2 x="700" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="-460" y="380"/>
+      <p2 x="-440" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="-60" y="380"/>
+      <p2 x="-40" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="380"/>
+      <p2 x="320" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="700"/>
+      <p2 x="-440" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="700"/>
+      <p2 x="-40" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="700"/>
+      <p2 x="320" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="60"/>
+      <p2 x="700" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-260" y="-40"/>
+      <p2 x="-260" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="-200" y="20"/>
+      <p2 x="-200" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="300"/>
+      <p2 x="520" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="100"/>
+      <p2 x="-140" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="220"/>
+      <p2 x="-140" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="700"/>
+      <p2 x="-140" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="580"/>
+      <p2 x="-140" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="460"/>
+      <p2 x="-140" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="340"/>
+      <p2 x="-140" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="820"/>
+      <p2 x="-140" y="1080"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="140"/>
+      <p2 x="140" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="240"/>
+      <p2 x="460" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="-180"/>
+      <p2 x="720" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="80"/>
+      <p2 x="80" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-280" y="-60"/>
+      <p2 x="-280" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="100"/>
+      <p2 x="-600" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="580"/>
+      <p2 x="-600" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="460"/>
+      <p2 x="-600" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="940"/>
+      <p2 x="-600" y="1080"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="340"/>
+      <p2 x="-600" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="820"/>
+      <p2 x="-600" y="940"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="220"/>
+      <p2 x="-600" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-600" y="700"/>
+      <p2 x="-600" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="-220" y="0"/>
+      <p2 x="-220" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="160"/>
+      <p2 x="160" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="260"/>
+      <p2 x="480" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="100"/>
+      <p2 x="100" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="200"/>
+      <p2 x="420" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-300" y="-80"/>
+      <p2 x="-300" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-20"/>
+      <p2 x="-240" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="220"/>
+      <p2 x="240" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="820"/>
+      <p2 x="240" y="1080"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="340"/>
+      <p2 x="240" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="460"/>
+      <p2 x="240" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="580"/>
+      <p2 x="240" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="700"/>
+      <p2 x="240" y="820"/>
+    </wire>
+    <wire>
+      <p1 x="-180" y="40"/>
+      <p2 x="-180" y="960"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="180"/>
+      <p2 x="180" y="840"/>
+    </wire>
+    <wire>
+      <p1 x="500" y="280"/>
+      <p2 x="500" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="120"/>
+      <p2 x="120" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="220"/>
+      <p2 x="440" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="60" y="60"/>
+      <p2 x="60" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="-100"/>
+      <p2 x="-320" y="120"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
