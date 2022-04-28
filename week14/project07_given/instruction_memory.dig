@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>LAYOUT</shapeType>
+    </entry>
+    <entry>
+      <string>Height</string>
+      <int>5</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>7</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-500" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Selector Bits</string>
+          <int>3</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="140" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>PN</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="160" y="-120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>00-dp-3nop</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e1a00000,e1a00000,e1a00000,e3a02002,e1a00000,e1a00000,e1a00000,e0810002,
+e1a00000,e1a00000,e1a00000,e2800001,e1a00000,e1a00000,e1a00000,e2800000,e1a00000,
+e1a00000,e1a00000,e1a00000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\00-dp-3nop.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>01-dp-2nop</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e1a00000,e1a00000,e3a02002,e1a00000,e1a00000,e0810002,e1a00000,e1a00000,
+e2800001,e1a00000,e1a00000,e2800000,e1a00000,e1a00000,e1a00000,e1a00000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\01-dp-2nop.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>02-blbx</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e1a00000,e1a00000,e3a02002,e1a00000,e1a00000,eb000008,e1a00000,e1a00000,
+e1a00000,e1a00000,e2800000,e1a00000,e1a00000,e1a00000,e1a00000,e0810002,e1a00000,
+e1a00000,e2800001,e1a00000,e1a00000,e12fff1e,e1a00000,e1a00000,e1a00000,e1a00000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\02-blbx.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>03-ldr</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e3a02002,e0810002,e2800001,e3a03000,e3a04063,e5834000,e5935000,e2850001,
+e2800000,e1a00000,e1a00000,e1a00000,e1a00000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\03-ldr.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>04-dp-fwd</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a01001,e3a02002,e0810002,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\04-dp-fwd.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>05-ldr-stl</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00000,e3a01001,e5801000,e5902000,e2820001,e2800000</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\05-ldr-stl.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="560"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>06-blbx-fls</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e3a00002,eb000000,e2800000,e2800004,e12fff1e</data>
+        </entry>
+        <entry>
+          <string>lastDataFile</string>
+          <string>C:\Users\usf\cs315_dev\Classes\cs315-2021f\solutions\project07-benson\rom\06-blbx-fls.hex</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-300" y="680"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="-360" y="720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="120"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-180" y="0"/>
+      <p2 x="140" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="0"/>
+      <p2 x="-300" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="320"/>
+      <p2 x="-300" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="480"/>
+      <p2 x="-300" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="580"/>
+      <p2 x="-100" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="100"/>
+      <p2 x="-180" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="100"/>
+      <p2 x="140" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-500" y="-40"/>
+      <p2 x="-420" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="-40"/>
+      <p2 x="-300" y="-40"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="200"/>
+      <p2 x="-300" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="40"/>
+      <p2 x="140" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="360"/>
+      <p2 x="-300" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="680"/>
+      <p2 x="-300" y="680"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="460"/>
+      <p2 x="-120" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="80"/>
+      <p2 x="140" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="80"/>
+      <p2 x="-300" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-360" y="720"/>
+      <p2 x="-340" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="720"/>
+      <p2 x="-300" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="240"/>
+      <p2 x="-300" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="560"/>
+      <p2 x="-300" y="560"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-20"/>
+      <p2 x="140" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-160" y="20"/>
+      <p2 x="140" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="340"/>
+      <p2 x="-140" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="600"/>
+      <p2 x="-300" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="120"/>
+      <p2 x="-300" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="120"/>
+      <p2 x="140" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="440"/>
+      <p2 x="-300" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="220"/>
+      <p2 x="-160" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="60"/>
+      <p2 x="240" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-120" y="60"/>
+      <p2 x="140" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="700"/>
+      <p2 x="-80" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="160" y="-120"/>
+      <p2 x="160" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="-180" y="0"/>
+      <p2 x="-180" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="80"/>
+      <p2 x="-100" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="0"/>
+      <p2 x="-340" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="120"/>
+      <p2 x="-340" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="240"/>
+      <p2 x="-340" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="360"/>
+      <p2 x="-340" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="480"/>
+      <p2 x="-340" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="-340" y="600"/>
+      <p2 x="-340" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="-40"/>
+      <p2 x="-420" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="80"/>
+      <p2 x="-420" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="200"/>
+      <p2 x="-420" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="320"/>
+      <p2 x="-420" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="440"/>
+      <p2 x="-420" y="560"/>
+    </wire>
+    <wire>
+      <p1 x="-420" y="560"/>
+      <p2 x="-420" y="680"/>
+    </wire>
+    <wire>
+      <p1 x="-120" y="60"/>
+      <p2 x="-120" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="-140" y="40"/>
+      <p2 x="-140" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-160" y="20"/>
+      <p2 x="-160" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="-80" y="100"/>
+      <p2 x="-80" y="700"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
