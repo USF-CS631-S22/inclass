@@ -13,11 +13,11 @@ e[4] sys_write(1, 0x0000000000002e3f, 1)
  [4] sys_write(1, 0x0000000000002e3f, 1)
 =[4] sys_write(1, 0x0000000000002e3f, 1)
  [4] sys_write(1, 0x0000000000002dff, 1)
-6[4] sys_write(1, 0x0000000000002dff, 1)
-5[4] sys_write(1, 0x0000000000002e3f, 1)
+5[4] sys_write(1, 0x0000000000002dff, 1)
+2[4] sys_write(1, 0x0000000000002e3f, 1)
 
 [4] sys_fork()
-[4] sys_wait(0x0000000080011b20)
+[4] sys_wait(0x0000000000002f3c)
 In child process: pid = 5
 In child program: pid = 5
 [4] sys_fork()
@@ -28,7 +28,7 @@ In child waiting to be killed.
 [4] sys_sleep(10)
 [4] sys_sleep(10)
 [4] sys_kill(6)
-[4] sys_wait(0x0000000080011b20)
+[4] sys_wait(0x0000000000000000)
 [4] sys_write(1, 0x0000000000002e3f, 1)
 w[4] sys_write(1, 0x0000000000002e3f, 1)
 a[4] sys_write(1, 0x0000000000002e3f, 1)
@@ -177,6 +177,6 @@ r[4] sys_write(1, 0x0000000000002e3f, 1)
 y[4] sys_write(1, 0x0000000000002e3f, 1)
 "[4] sys_write(1, 0x0000000000002e3f, 1)
 
-[4] sys_traceon()
+[4] sys_traceoff()
 [4] sys_exit(0)
 $
