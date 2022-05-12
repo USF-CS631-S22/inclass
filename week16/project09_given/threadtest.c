@@ -21,11 +21,11 @@ int counter_lock;
 int counter;
 
 void
-thread(void *arg)
+thread(int arg)
 {
     int i;
 
-    printf("I am thread %l\n", (long) arg);
+    printf("I am thread %d\n", arg);
 
     for (i = 0; i < 1000; i++) 
     {
@@ -46,10 +46,10 @@ main(void)
     counter = 0;
 
     stack1 = sbrk(4096);
-    id1 = clone(thread, stack1, (void *) 0);
+    id1 = clone(thread, stack1, 0);
 
     stack2 = sbrk(4096);
-    id2 = clone(thread, stack2, (void *) 1);
+    id2 = clone(thread, stack2, 1);
 
     join(id1);
     join(id2);
